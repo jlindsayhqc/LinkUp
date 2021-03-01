@@ -1,5 +1,5 @@
 {
-	"enterConferenceNameOrUrl": "Enter a name for your conference or a Jitsi URL",
+	"enterConferenceNameOrUrl": "Enter a name for your conference or a LinkUp URL",
 	"go": "GO",
 	"help": "Help",
 	"termsLink": "Terms",
@@ -12,7 +12,7 @@
 		"startTour": "Start Tour",
 		"skip": "Skip",
 		"welcome": "Welcome to {{appName}}",
-		"letUsShowYouAround": "Let us show you around!",
+		"letUsShowYouAround": "Let Execulink show you around!",
 		"next": "Next",
 		"conferenceUrl": "Enter the name (or full URL) of the room you want to join. You may make a name up, just let others know so they enter the same name.",
 		"settingsDrawerButton": "Click here to open the settings drawer.",

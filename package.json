@@ -1,9 +1,9 @@
 {
   "name": "jitsi-meet-electron",
   "version": "2.5.1",
-  "description": "Electron application for Jitsi Meet",
+  "description": "LinkUp Application",
   "main": "./build/main.js",
-  "productName": "Jitsi Meet",
+  "productName": "LinkUp",
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
     "clean": "rm -rf node_modules build dist",
@@ -18,7 +18,7 @@
   },
   "build": {
     "appId": "org.jitsi.jitsi-meet",
-    "productName": "Jitsi Meet",
+    "productName": "LinkUp",
     "generateUpdatesFilesForAllChannels": true,
     "files": [
       "**/*",
@@ -34,15 +34,15 @@
       "entitlements": "entitlements.mac.plist",
       "entitlementsInherit": "entitlements.mac.plist",
       "extendInfo": {
-        "NSCameraUsageDescription": "Jitsi Meet requires access to your camera in order to make video-calls.",
-        "NSMicrophoneUsageDescription": "Jitsi Meet requires access to your microphone in order to make calls (audio/video)."
+        "NSCameraUsageDescription": "LinkUp requires access to your camera in order to make video-calls.",
+        "NSMicrophoneUsageDescription": "LinkUp requires access to your microphone in order to make calls (audio/video)."
       }
     },
     "linux": {
       "artifactName": "jitsi-meet-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
-      "executableName": "jitsi-meet",
+      "description": "LinkUp Desktop App",
+      "executableName": "LinkUp",
       "target": [
         {
           "arch": "x64",
@@ -89,7 +89,7 @@
     "electron",
     "jitsi-meet"
   ],
-  "author": "Jitsi Team <support@jitsi.org>",
+  "author": "Jonny Lindsay <jonathan.lindsay@execulinktelecom.ca>",
   "readmeFilename": "README.md",
   "license": "Apache-2.0",
   "dependencies": {
@@ -110,6 +110,7 @@
     "electron-debug": "3.0.1",
     "electron-is-dev": "1.2.0",
     "electron-log": "4.1.1",
+    "electron-packager": "^15.2.0",
     "electron-reload": "1.5.0",
     "electron-store": "5.1.1",
     "electron-updater": "4.2.5",
